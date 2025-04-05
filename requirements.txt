@@ -1,0 +1,6 @@
+groq
+dotenv
+agno
+duckduckgo-search
+matplotlib
+networkx
