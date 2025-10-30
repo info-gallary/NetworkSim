@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from agno.agent import Agent, RunResponse
+from agno.agent import Agent, RunOutput
 from agno.models.groq import Groq
 from agno.tools.duckduckgo import DuckDuckGoTools
 import networkx as nx
@@ -402,7 +402,7 @@ with tab2:
         )
         
         try:
-            output: RunResponse = agent.run(query)
+            output: RunOutput = agent.run(query)
             return output.content
         except Exception as e:
             return f"I encountered an error while searching: {str(e)}. Please try again with a different query."
