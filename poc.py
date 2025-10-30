@@ -393,7 +393,7 @@ with tab2:
     # Function to get agent response
     def get_agent_response(query):
         agent = Agent(
-            model=Groq(id="qwen-2.5-32b"),
+            model=Groq(id="llama-3.1-8b-instant"),
             description="An intelligent web search agent that performs real-time searches to retrieve the most accurate, up-to-date, and relevant information.\n"
                       "It prioritizes authoritative sources, extracts key insights, and presents structured summaries for user queries.\n"
                       "The agent ensures all responses are backed by authentic sources and provides direct links for further verification.",
